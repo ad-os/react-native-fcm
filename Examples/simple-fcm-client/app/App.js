@@ -172,7 +172,7 @@ export default class App extends Component {
         </Text>
 
         <Text style={styles.feedback}>
-          Remote notif won't be available to iOS emulators
+          // Remote notif won't be available to iOS emulators
         </Text>
 
         <TouchableOpacity onPress={() => this.sendRemoteNotification(token)} style={styles.button}>

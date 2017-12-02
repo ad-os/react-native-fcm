@@ -6,10 +6,14 @@ const API_URL = "https://fcm.googleapis.com/fcm/send";
 class FirebaseClient {
 
   async send(body, type) {
-		if(FirebaseClient.KEY === 'YOUR_API_KEY'){
+    console.log("Hello");
+    console.log();
+		if(FirebaseConstants.KEY === 'YOUR_API_KEY'){
 			Alert.alert('Set your API_KEY in app/FirebaseConstants.js')
 			return;
 		}
+    console.log("hey");
+    console.log(body);
   	let headers = new Headers({
   		"Content-Type": "application/json",
       "Authorization": "key=" + FirebaseConstants.KEY
